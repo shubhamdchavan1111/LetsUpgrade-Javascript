@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day_1</title>
+</head>
+
+<body>
+    <div>
+        <h1>Javascript Essentials | Batch 1</h1>
+        <h3>Assignment Day 1</h3>
+        <h4>14th July 2020</h4>
+        <p>name-shubham chavan <br>
+            email- shubhamdchavan1111@gmail.com
+        </p>
+        <!-- que 1 starts here -->
+        <hr>
+        <h4>Question 1 :</h4>
+        <h4>Explore and explain the various methods in console function
+            Explain them</h4>
+
+        <!-- ans(1) -->
+        <p>
+            following method of the console function <br>
+        <ul>
+            <li>log()</li>
+            <li>error()</li>
+            <li>warn()</li>
+            <li>clear()</li>
+            <li>time() and timeEnd()</li>
+            <li>table()</li>
+            <li>count()</li>
+
+        </ul>
+        <!-- explanation of each for the example of each refer index.js -->
+        <h4>log()</h4>
+        <p>
+            Mainly used to <em>log/print</em> the output to the console.
+        </p>
+        <h4>error()</h4>
+        <p>
+            Used to log error message to the console.
+        </p>
+        <h4>warn()</h4>
+        <p>
+            Used to log warning message to the console.
+        </p>
+        <h4>clear()</h4>
+        <p>
+            Used to clear the console.
+        </p>
+        <h4>time() and timeEnd()</h4>
+        <p>
+            Whenever we want to know the amount of time spend by a block or a function, we can make use of the time()
+            and timeEnd() methods
+        </p>
+        <h4>table()</h4>
+        <p>This method allows us to generate a table inside a console
+
+        </p>
+        <h4>count()</h4>
+        <p>
+            This method is used to count the number that the function hit by this counting method.
+
+        </p>
+
+
+        <!-- please refer the index.js file for the explanation of the console function  -->
+
+        <!--         
+            // console.log() method 
+            console.log('abc'); 
+            console.log(1); 
+            console.log(true); 
+            console.log(null); 
+            console.log(undefined); 
+            console.log([1, 2, 3, 4]); // array inside log 
+            console.log({a:1, b:2, c:3}); // object inside log 
+
+            // console.error() method 
+            console.error('This is a simple error'); 
+
+            // console.warn() method 
+            console.warn('This is a warning.'); 
+
+            // console.clear() method 
+            console.clear(); 
+
+            // console.table() method 
+            console.table({'a':1, 'b':2}); 
+         -->
+
+
+        </p>
+
+    </div>
+    <hr>
+    <!-- que2 starts here -->
+    <div>
+        <h4>Question 2 :</h4>
+        <h4>Write the difference between var, let and const with code examples</h4>
+        <!-- ans (2) -->
+        <p>
+            var and let are both used for variable declaration in javascript but the difference between them is that var
+            is function scoped and let is block scoped.
+            It can be said that a variable declared with var is defined throughout the program as compared to let.
+            Variables defined with <em>const</em> behave like let variables, except they cannot be reassigned <br>
+            <br>
+        </p>
+        <h4>Var</h4>
+        <p>
+            The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the
+            value of that variable.
+
+            <br>
+            Example: var a =10;
+            <br>
+            Variable declarations are processed before the execution of the code. <br>
+            The scope of a JavaScript variable declared with var is its current execution context.
+            <br>
+            <br>
+        </p>
+
+        <h4>let</h4>
+        <p> The let statement declares a local variable in a block scope. It is similar to var, in that we can
+            optionally initialize the variable.
+            <br>
+            Example: let a =10;
+            <br>
+            The let statement allows you to create a variable with the scope limited to the block on which it is used.
+            <br>
+            <br>
+        </p>
+        <h4>const</h4>
+        <p>
+            const statement values can be assigned once and they cannot be reassigned. The scope of const statement
+            works similar to let statements.
+            <br>
+            Example: const a =10;
+            <br>
+        </p>
+        An example will clarify the difference even better
+        <p>
+            <br>
+            <br>
+            Example of var:
+            <br>
+            Input: <br>
+
+            var x=5;<br>
+            console.log(x);<br>
+            <br>
+            <br>
+            Example of let: <br>
+
+            Input: <br>
+
+            let x=5; <br>
+            console.log(x) <br>
+            <br>
+            <br>
+            Example of const: <br>
+            const PI = 3.14; <br>
+            console.log(PI) <br>
+
+        </p>
+
+    </div>
+    <hr>
+
+    <!-- que 3 starts here -->
+    <div>
+        <h4>Question 3 :</h4>
+        <h4>Write a brief intro on available data types in Javascript.</h4>
+        <!-- ans(3) -->
+        <p>
+            There are six basic data types in JavaScript which can be divided into three main categories: primitive (or
+            primary), composite (or reference), and special data types. String, Number, and Boolean are primitive data
+            types. Object, Array, and Function (which are all types of objects) are composite data types. Whereas
+            Undefined and Null are special data types.
+            <br>
+            Primitive data types can hold only one value at a time, whereas composite data types can hold collections of
+            values and more complex entities
+            <br>
+        </p>
+
+        <h4>The String Data Type</h4>
+        <p>
+            The string data type is used to represent sequences of characters. Strings are created using single or
+            double
+            quotes surrounding one or more characters, as shown below:
+            <br>
+            Example <br>
+            <!-- using single quotes -->
+            var a = 'Hi there!'; <br>
+            <!-- using double quotes -->
+            var b = "Hi there!"; <br>
+        </p>
+
+        <h4>The Number Data Type</h4>
+        <p>
+            The number data type is used to represent positive or negative numbers with or without decimal place, or
+            numbers written using exponential notation
+            <br>
+            Example <br>
+            <!-- integer -->
+            var a = 25; <br>
+
+            var b = 80.5; <br>
+            <!--floating-point number -->
+        </p>
+
+        <h4>The Boolean Data Type</h4>
+        <p>
+            The Boolean data type can hold only two values: true or false. It is typically used to store values like yes
+            (true) or no (false), on (true) or off (false), etc. <br>
+
+            Example <br>
+            var isReading = true; <br>
+            <!-- yes, I'm reading -->
+
+            var isSleeping = false; <br>
+            <!-- no, I'm not sleeping -->
+        </p>
+
+        <h4>The Undefined Data Type</h4>
+        <p>
+            The undefined data type can only have one value-the special value undefined. If a variable has been
+            declared, but has not been assigned a value, has the value undefined. <br>
+            Example <br>
+            var a; <br>
+            <!-- output = undefined -->
+            var b = "Hello World!"; <br>
+            <!-- output = Hello World! -->
+        </p>
+        <h4>The Object Data Type</h4>
+        <p>The object is a complex data type that allows you to store collections of data.
+
+            An object contains properties, defined as a key-value pair. A property key (name) is always a string, but
+            the value can be any data type, like strings, numbers, booleans, or complex data types like arrays, function
+            and other objects.</p>
+
+        <h4> The Array Data Type</h4>
+        <p>
+            An array is a type of object used for storing multiple values in single variable. Each value (also called an
+            element) in an array has a numeric position, known as its index, and it may contain data of any data
+            type-numbers, strings, booleans, functions, objects, and even other arrays. The array index starts from 0.
+
+        </p>
+        <hr>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
