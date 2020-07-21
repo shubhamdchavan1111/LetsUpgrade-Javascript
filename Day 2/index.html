@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Day 2</title>
+</head>
+
+<body>
+    <!--que 1 start here  -->
+    <h1>Assignment Questions for Day 2</h1>
+    <h3>Question 1</h3>
+    <p>Write a js code which takes input from the user and logs it in the console.</p>
+    <!-- ans (1) -->
+    <p>
+        var userName = prompt ("whats your age",24); <br>
+        console.log("you are age is " + "" + userName ); <br>
+    </p>
+
+    <!-- que 2 starts here -->
+
+    <h3>Question 2</h3>
+    <p>Explain with examples the remaining methods of String and Array</p>
+    <!-- ans 2 starts here -->
+
+    <pre>
+        //String
+       let str="Hello, this is JS! ";
+       let str1="I'm very exicted to learn JS."; 
+       console.log(str.concat(str1)); //concat method is used to concatenate two strings
+       
+
+       console.log(str.endsWith('S')); //endsWith method is used to check the value of which alphabet it ends with.Returns a boolean value(true/false)
+
+       console.log(str.includes('is')); //includes method is used to check whether the word is in the string or not.Returns a boolean value(true/false)
+
+       console.log(str1.localeCompare(str)); //localeCompare is used to compare two strings in the current locale
+
+       console.log(str.match(str));//match method is used to search a string for a match against a regular expression,and returns the matches
+
+       console.log(str.repeat(3));//returns a new string with a specified number of copies of an existing string
+
+       console.log(str1.replace(str));//replace the existing string with the new one
+
+       console.log(str.search("this"));//search is used to serach specified word or string and it returns position of the match
+
+       let str2="Hola!!!"
+       console.log(str2.slice(2));//slice methods extracts a part of string and returns a new string
+
+       console.log(str.split(","));//split method is used to convert string into array
+
+       console.log(str.trim(str));//trim method removes whitespace from both ends of string
+
+       console.log(str2.valueOf(str));//returns primitive value of string object
+
+//Array
+       let arr=["Code","JS","Compile"];
+       let arr1=["India","America","South Korea"];
+
+       console.log(arr.concat(arr1));//concate methods is used to join two arrays
+
+       console.log(arr.copyWithin(arr1));//copyWithin method is used copy the elements from array
+
+       arr.push("Output");//push method adds an element in an existing array
+       console.log(arr);
+
+       arr.pop("Output");//pop methods deletes an element from an existing array
+       console.log(arr);
+
+       arr.unshift("Input");//unshift method returns new array length
+       console.log(arr);
+
+       arr.splice(2,2,"IDE","Decode");//splice method is used to remove elements from an existing array
+       console.log(arr);
+
+       let arr2=arr.slice(1);//Slice method is used to create a new array from the existing array
+       console.log(arr2);
+       console.log(arr);
+
+       arr.sort();//sort method is used to sort an array
+       console.log(arr);
+
+       let arr3=arr;
+       console.log(arr);
+       console.log(arr3.reverse());//reverse method is used to reverse the elements in an array
+       
+    
+  </pre>
+
+
+    <!-- que 3 starts here -->
+    <mark>Optional Assignment 3</mark>
+    <h3>Question 3</h3>
+    <p>Ask the user if he is 21+ and log the value "Can drink", "Cannot Drink"</p>
+    <br>
+    <!-- ans 3 starts here -->
+    <!-- let i = users age -->
+    var i = prompt ("whats your age",24); <br>
+    if (i>=18){ <br>
+    console.log("can drink"); <br>
+    } <br>
+    else{ <br>
+    console.log("cannot drink") <br>
+    } <br>
+
+
+    <script src="./sol.js"></script>
+</body>
+
+</html>
