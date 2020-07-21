@@ -1,0 +1,21 @@
+<html>
+ <head><title>Assignment 5</title></head>
+ <body>
+     <h2>Question 5:<br></h2>
+   You are managing a sales department for your company, you want to reward your employees based on the sales made by them during the year.<br> The criteria is as follows: <br>1. Sales from 0-5000 : 2% <br>2. Sales from 5001 - 10000 : 5% <br>3. Sales from 10001 - 20000 : 7% <br>4. Above 20000 - 10% <br>Then log the total commission earned by him.
+  <script>
+let Sales=+prompt("Enter your Sales:");
+let Salary=+prompt("Enter your Salary:");
+if(isNaN(Salary+Sales))
+console.log("InValid Not a Number");
+else{ 
+    let Percent;
+    if(Sales<=5000)Percent=2;
+    else if(Sales>5000&&Sales<=10000)Percent=5;
+    else if(Sales>10000&&Sales<=20000)Percent=7;
+    else Percent=10;
+    console.log(`The Commission is ${Percent}%  \nTotal Commission earned by the Salesman is ${Salary*(100+Percent)/100}`);
+}
+</script> 
+</body>
+</html>

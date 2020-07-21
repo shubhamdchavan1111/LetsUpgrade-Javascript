@@ -1,0 +1,17 @@
+<html>
+ <head><title>Assignment 2</title></head>
+ <body>
+   <h2>Question 2: <u>Destructure the following object </u></h2>
+     <script>
+   const student={
+    name:"Helsinki",
+    age:24,
+    projects:{
+      diceGame:"Two player dice game using JavaScript"
+      }
+}
+const {name,age,projects:{diceGame}}=student;
+console.log(`Name: ${name} \nAge: ${age} \nProjects- DiceGame: ${diceGame} `);
+  </script> 
+ </body>
+</html>
