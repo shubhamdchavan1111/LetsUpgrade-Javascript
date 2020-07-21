@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <h2>Question 2:</h2>
+    Create a Class User with properties as name, age & email. <br><br>
+    He can login and logout.<br><br>
+    Create another class Moderator which has all the features of User, plus additional functionality to Add coins ad remove coins.<br><br>
+    Create one more class Admin which has all the features of Moderator plus additional features like add a Course and delete a particular course for user.
+    <script>
+      class User{
+    constructor(name, age, email){
+        this.name = name;
+        this.age = age;
+        this.email= email;
+        this.course=[];
+    }
+    login(){
+        console.log(`${this.name} has logged in`);
+        return this;
+    }
+    logout(){
+        console.log(`${this.name} has logged out`);
+        return this;
+    }
+}
+class Moderator extends User{
+    constructor(name, age, email){
+        super(name, age, email);
+        this.coins=0;
+
+    }
+    addCoins(){
+        this.coins++;
+        console.log(`${this.name} has ${this.coins} coins(s) now.`);
+        return this;
+    }
+    removeCoins(){
+        this.coins--;
+        console.log(`${this.name} has ${this.coins} coin(s) now.`);
+        return this;
+    }   
+}
+class Admin extends User {
+ constructor(name,age,email){
+        super(name,age,email);
+    }
+    addcourse(user,course){
+        user.course.push(course);
+        console.log(user)
+    }
+    deleteCourse(user,course){
+        user.course.pop(course);
+        console.log(user);
+    }
+}
+let user1 = new User("Amrit Matharu", 20, "leftnright@gmail.com");
+user1.login().logout();
+
+let user2 = new Moderator("Stray Kids", 20, "youmakestraykidsstay@gmail.com");
+user2.login();
+user2.addCoins().addCoins();
+user2.logout();
+user2.removeCoins();
+let admin=new Admin("Kang Daniel",21,'ceokangdaniel@gmail.com');
+admin.addcourse(user1,'Python');
+admin.addcourse(user1,'Javascript');
+admin.addcourse(user2,'Javascript');
+admin.addcourse(user2,'Java');
+admin.addcourse(user2,'Python');
+admin.addcourse(user1,'Java');
+admin.deleteCourse(user1,'Java');
+    </script>
+
+
+</body>
+
+</html>
